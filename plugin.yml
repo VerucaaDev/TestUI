@@ -1,0 +1,27 @@
+name: TestUI
+api: 5.0.0
+version: 1.1.1
+main: VerucaaDev\UI\Main
+author: VerucaaDev
+description: Hai
+
+commands:
+  # The name of the command the user will type to execute it
+  ui:
+    # Description that will be shown in help command
+    description: ui command
+    # Shown to the user if they type the command in incorrectly
+    usage: "/ui"
+    # Permission required to run the command
+    permission: ui.command
+    # Shown to the user if they don't have permission to run the command
+    permission-message: "You do not have permission to use this example command!"
+
+permissions:
+  ui.command:
+    description: "Allows the user to run the example command"
+    # Default state of the permission. Explanation of each value:
+    # op: only op players have this permission by default
+    # true: everyone has this permission by default
+    # false: no one has this permission by default
+    default: true
